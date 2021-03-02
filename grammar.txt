@@ -1,0 +1,4 @@
+// An example interpretation is that an expression is a term plus or minus another term that is 0 or more. The * means that the thing before it must be 0 or more
+expression: term ((PLUS|MINUS) term)*
+term: factor((MUL|DIV) factor)*
+factor: INT|FLOAT
